@@ -17,10 +17,11 @@ $font-sub: 'Source Sans Pro', sans-serif;
   100%{ bottom: 50px}
 }
 
-
-
 .d-flex {
   display: flex;
+}
+.d-wrap{
+  flex-wrap: wrap;
 }
 
 p {
@@ -37,6 +38,7 @@ h3 {
   letter-spacing: 12px;
 }
 
+/*-----------------*/
 header {
   position: absolute;
   z-index: 2;
@@ -99,7 +101,7 @@ header {
   }
 
 }
-
+/*----------------------*/
 .main {
   background-image: url('../images/bg_main_01.jpg');
   background-size: cover;
@@ -152,7 +154,7 @@ header {
     }
   }
 }
-
+/*--------------------*/
 .bouncy {
   background-color: white;
   padding-top: 114px;
@@ -187,8 +189,8 @@ header {
   }
 
   .col-sm-3 {
-    max-width: 30%;
-    order: 2;
+
+        order: 2;
 
     img {
       width: 100%;
@@ -309,14 +311,27 @@ header {
 
       h3 {
         position: absolute;
-        font-size: 40px;
         color: #ffffff;
         visibility: hidden;
         top: 40%;
-        left: 35%;
-
-        font-weight: 900;
+        left: 28%;
         z-index: 3;
+      }
+      @include max-screen(1024px) {
+        h3{
+          left: 20%;
+        }
+      }
+      @include max-screen(992px) {
+        h3{
+          left: 5%;
+        }
+      }
+
+      @include max-screen(767px) {
+        h3{
+        left: 40%;
+        }
       }
 
       img {
@@ -354,13 +369,9 @@ header {
     background-size: cover;
     padding: 50px 15px;
 
-    .d-flex {
-      justify-content: space-between;
-    }
-
     p {
       color: #ffffff;
-      margin-bottom: 0;
+      margin-bottom: 10px;
 
       span {
         font-weight: 700;
@@ -373,7 +384,7 @@ header {
       padding: 12px 22px 10px;
       border: 1px solid #ffffff;
       border-radius: 25px;
-      margin-left: 140px;
+
       text-decoration: none;
     }
   }
@@ -392,8 +403,9 @@ header {
   p {
     margin-bottom: 66px;
   }
+.col-sm-6{
 
-  .col-sm-1 {
+  .col-sm-2 {
     a {
       display: block;
       width: 53px;
@@ -411,7 +423,7 @@ header {
     }
   }
 
-  .col-sm-5 {
+  .col-sm-9.col-xs-9 {
     h4 {
       font-family: $font-main;
       font-size: 20px;
@@ -422,106 +434,83 @@ header {
     p {
       text-align: left;
       margin-bottom: 40px;
+      span{
+        color:#19bd9a;
+        font-weight: 600;
+      }
 
     }
 
-
+  }
   }
 /*круговой прогресс-бар--*/
   .col-sm-6 {
-    .diagram {
-      width: 125px;
-      height: 125px;
-      border-radius: 50%;
-      background: #f3f3f3;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .diagram::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      right: 6px;
-      bottom: 6px;
-      border-radius: 50%;
-      background: #f3f3f3;
-      z-index: 3;
-      opacity: 1;
-    }
-
-    .diagram .piece {
-      width: 100%;
-      height: 100%;
-      left: 0;
-      right: 0;
-      overflow: hidden;
-      position: absolute;
-    }
-
-    .diagram .piece::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 50%;
-      height: 100%;
-    }
-
-    .diagram .piece.left {
-      transform: rotate(0deg);
-      z-index: 2;
-      border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
-    }
-
-    .diagram.over_50 .piece.left {
-      transform: rotate(180deg);
-    }
-
-    .diagram .piece.right {
-      transform: rotate(180deg);
-      z-index: 1;
-      border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
-    }
-
-    .diagram.over_50 .piece.right {
-      transform: rotate(360deg);
-    }
-
-    .diagram .left::before {
-      background: #047378;
-    }
-
-    .diagram.over_50 .left::before {
-      background: #19bd9a;
-    }
-
-    .diagram .right::before {
-      background: #047378;
-    }
-
-    .diagram .text {
-      position: absolute;
-      z-index: 3;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      text-align: center;
+    .bg-style {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: row;
+      margin-top: 60px;
+
+      .item{
+        margin-left: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+        span{
+          font-size: 16px;
+          color: #81868e;
+          display: block;
+          margin-left: 20px
+        }
+      }
     }
 
-    .diagram .text b {
-      display: block;
-      font-size: 25px;
-      color: #81868e;
-      font-family: $font-main;
-      span{
-        font-size: 14px;
+    @include max-screen(992px) {
+      .bg-style{
+        flex-wrap:wrap;
+        margin-top: 0;
       }
+    }
+    .counter {
+      display: inline-flex;
+      cursor:pointer;
+      width:125px;
+      height:125px;
+      max-width:100%;
+      position:relative;
+      justify-content:center;
+      align-items:center;
+      font-size: 25px;
+      font-weight: 500;
+      transition: height .2s ease-in-out;
+      background: #f3f3f3;
+      border-radius:50%;
+      margin-bottom: 24px;
+    }
+
+    @include max-screen(1024px) {
+      .counter{
+        width:100px;
+        height:100px;
+      }
+    }
+    .percentage {
+      position:absolute;
+      text-align:center;
+      top:50%;
+      left:0;
+      right:0;
+      vertical-align:middle;
+      transform:translate3d(0,-50%,0);
+    }
+    canvas {
+      position:absolute;
+      top:0;
+      left:0;
+      height: 125px!important;
+      width: 125px!important;
+    }
+
+    body {
+      text-align:center;
     }
 
 
@@ -536,7 +525,7 @@ header {
   padding-bottom: 100px;
   position: relative;
 
-  .col-sm-7 {
+  .col-sm-6 {
     h3 {
       color: #ffffff;
       margin-bottom: 50px;
@@ -556,17 +545,25 @@ header {
 
   .col-sm-4 {
     .monitor {
-      max-width: 420px;
+      max-width: 410px;
       position: absolute;
       top: -130px;
-      right: 80px;
+      right: -150px;
       img{
         width: 100%;
         display: block;
       }
     }
+    @include max-screen(1024px) {
+      .monitor {
+        max-width: 410px;
+
+        right:-40px;
+      }
+    }
     @include max-screen(767px) {
       .monitor {
+        max-width: 410px;
         position: relative;
         top: 0;
         right: 0;
