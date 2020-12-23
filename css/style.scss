@@ -12,6 +12,13 @@ $font-sub: 'Source Sans Pro', sans-serif;
   }
 }
 
+@keyframes jump{
+  0%  { bottom: 77px}
+  100%{ bottom: 50px}
+}
+
+
+
 .d-flex {
   display: flex;
 }
@@ -45,11 +52,16 @@ header {
     background-image: none;
     background-color: transparent;
     box-shadow: none;
-
+    .navbar-nav {
+      margin: 7px -15px;
+      float: right;}
     .navbar-nav > li > a {
       color: #ffffff;
       font-size: 16px;
       font-family: & font-main;
+              padding-top: 5px;
+        padding-bottom: 5px;
+        line-height: 14px;
 
       &:hover {
         color: white;
@@ -99,21 +111,45 @@ header {
 
 
   h1 {
-    z-index: 2;
     font-family: & font-sub;
+    font-weight: 300;
     font-size: 35px;
-    margin-bottom: 44px;
     color: white;
-        letter-spacing: 12px;
+    letter-spacing: 11px;
+    margin: 0 auto 44px;
+
   }
 
   p {
     color: white;
-  }
-
-  img {
+    margin: auto;
+    word-spacing: 7px;
+    letter-spacing: 1px;
+    }
+  a{
+    text-decoration: none;
     display: block;
-    width: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #19bd9a;
+    position: absolute;
+    left: 50%;
+    bottom: 77px;
+    padding-top: 12px;
+    &:after{
+      content: "\f078";
+      font-family: "Font Awesome 5 Free";;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 14px;
+      padding-left:13px ;
+    }
+    &:hover{
+      animation: jump;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+    }
   }
 }
 
@@ -194,10 +230,8 @@ header {
       height: 56px;
       background-color: #81868e;
       border-radius: 50%;
-      margin-right: 12px;
-      margin-left: 12px;
+      margin: 0 12px 66px;
       padding-top: 12px;
-      margin-bottom: 66px;
       text-decoration: none;
 
       &:before {

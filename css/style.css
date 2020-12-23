@@ -2,6 +2,11 @@
 @import url(bootstrap.min.css);
 @import url(bootstrap-theme.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap");
+@keyframes jump {
+  0% {
+    bottom: 77px; }
+  100% {
+    bottom: 50px; } }
 .d-flex {
   display: flex; }
 
@@ -29,10 +34,16 @@ header {
     background-image: none;
     background-color: transparent;
     box-shadow: none; }
+    header .navbar-default .navbar-nav {
+      margin: 7px -15px;
+      float: right; }
     header .navbar-default .navbar-nav > li > a {
       color: #ffffff;
       font-size: 16px;
-      font-family: header .navbar-default .navbar-nav > li > a font-main; }
+      font-family: header .navbar-default .navbar-nav > li > a font-main;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      line-height: 14px; }
       header .navbar-default .navbar-nav > li > a:hover {
         color: white;
         border: white 1px solid;
@@ -63,17 +74,39 @@ header {
   overflow: hidden;
   position: relative; }
   .main h1 {
-    z-index: 2;
     font-family: .main h1 font-sub;
+    font-weight: 300;
     font-size: 35px;
-    margin-bottom: 44px;
     color: white;
-    letter-spacing: 12px; }
+    letter-spacing: 11px;
+    margin: 0 auto 44px; }
   .main p {
-    color: white; }
-  .main img {
+    color: white;
+    margin: auto;
+    word-spacing: 7px;
+    letter-spacing: 1px; }
+  .main a {
+    text-decoration: none;
     display: block;
-    width: 100%; }
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #19bd9a;
+    position: absolute;
+    left: 50%;
+    bottom: 77px;
+    padding-top: 12px; }
+    .main a:after {
+      content: "\f078";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 14px;
+      padding-left: 13px; }
+    .main a:hover {
+      animation: jump;
+      animation-duration: 1s;
+      animation-timing-function: linear; }
 
 .bouncy {
   background-color: white;
@@ -128,10 +161,8 @@ header {
     height: 56px;
     background-color: #81868e;
     border-radius: 50%;
-    margin-right: 12px;
-    margin-left: 12px;
+    margin: 0 12px 66px;
     padding-top: 12px;
-    margin-bottom: 66px;
     text-decoration: none; }
     .details .col-sm-6 a:before {
       content: "\f004";
