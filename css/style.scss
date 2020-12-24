@@ -43,6 +43,7 @@ h3 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 12px;
+  margin-bottom: 44px;
 }
 
 /*-----------------*/
@@ -151,6 +152,7 @@ header {
     left: 50%;
     bottom: 77px;
     padding-top: 12px;
+    margin-left: -20px;
 
     &:after {
       content: "\f078";
@@ -231,9 +233,7 @@ header {
   padding-bottom: 100px;
 
   .col-sm-6 {
-    h3 {
-      margin-bottom: 44px
-    }
+
 
     p {
       color: #81868e;
@@ -303,9 +303,7 @@ header {
   background-color: #ffffff;
   padding-top: 80px;
 
-  h3 {
-    margin-bottom: 44px;
-  }
+
 
   p {
     color: #81868e;
@@ -399,6 +397,7 @@ header {
       border-radius: 25px;
 
       text-decoration: none;
+
     }
   }
 }
@@ -408,10 +407,6 @@ header {
   background-color: #f3f3f3;
   padding-top: 80px;
   padding-bottom: 135px;
-
-  h3 {
-    margin-bottom: 44px;
-  }
 
   p {
     margin-bottom: 66px;
@@ -467,7 +462,6 @@ header {
       margin-top: 60px;
 
       .item {
-        margin-left: 20px;
         text-align: center;
         margin-bottom: 40px;
 
@@ -600,11 +594,7 @@ header {
   padding: 80px 15px 100px;
   background-color: #f3f3f3;
 
-  h3 {
-    margin-bottom: 44px
-  }
-
-  p {
+   p {
     margin-bottom: 86px;
   }
 
@@ -869,7 +859,7 @@ margin-bottom: 54px;
      background-color: #ffffff;
      border: #19bd9a solid 1px;
      border-radius: 50%;
-     margin: 10px;
+     margin: 60px 10px 0;
    }
   }
   .owl-dots .owl-dot {
@@ -881,3 +871,37 @@ margin-bottom: 54px;
   }
 }
 
+/*-------------------------------------------------*/
+.button-contact{
+  background-image: url(../images/already_bg_02.jpg);
+  background-color: rgba(22, 22, 22, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px 56px;
+  h4 {
+    font-family: $font-main;
+    font-size: 20px;
+    margin-bottom: 44px;
+    color: #ffffff;
+  }
+  a{
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 22px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+}
+/*------------------------------------------------*/
+.testimonials{
+  padding: 80px 15px 100px;
+  background-color: #f3f3f3;
+  p{
+    margin-bottom: 66px;
+  }
+
+}

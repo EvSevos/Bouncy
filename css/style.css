@@ -26,7 +26,8 @@ h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 12px; }
+  letter-spacing: 12px;
+  margin-bottom: 44px; }
 
 /*-----------------*/
 header {
@@ -103,7 +104,8 @@ header {
     position: absolute;
     left: 50%;
     bottom: 77px;
-    padding-top: 12px; }
+    padding-top: 12px;
+    margin-left: -20px; }
     .main a:after {
       content: "\f078";
       font-family: "Font Awesome 5 Free";
@@ -157,8 +159,6 @@ header {
   background-color: #f3f3f3;
   padding-top: 80px;
   padding-bottom: 100px; }
-  .details .col-sm-6 h3 {
-    margin-bottom: 44px; }
   .details .col-sm-6 p {
     color: #81868e;
     margin-bottom: 66px; }
@@ -202,8 +202,6 @@ header {
 .projects {
   background-color: #ffffff;
   padding-top: 80px; }
-  .projects h3 {
-    margin-bottom: 44px; }
   .projects p {
     color: #81868e;
     margin-bottom: 66px; }
@@ -268,8 +266,6 @@ header {
   padding-top: 80px;
   padding-bottom: 135px;
   /*╨║╤А╤Г╨│╨╛╨▓╨╛╨╣ ╨┐╤А╨╛╨│╤А╨╡╤Б╤Б-╨▒╨░╤А--*/ }
-  .services h3 {
-    margin-bottom: 44px; }
   .services p {
     margin-bottom: 66px; }
   .services .col-sm-6 .col-sm-2 a {
@@ -300,7 +296,6 @@ header {
     flex-direction: row;
     margin-top: 60px; }
     .services .col-sm-6 .bg-style .item {
-      margin-left: 20px;
       text-align: center;
       margin-bottom: 40px; }
       .services .col-sm-6 .bg-style .item span {
@@ -387,8 +382,6 @@ header {
   padding: 80px 15px 100px;
   background-color: #f3f3f3;
   /*-Galereya------------------------------*/ }
-  .portfolio h3 {
-    margin-bottom: 44px; }
   .portfolio p {
     margin-bottom: 86px; }
   .portfolio .nav-tabs {
@@ -577,10 +570,40 @@ header {
       background-color: #ffffff;
       border: #19bd9a solid 1px;
       border-radius: 50%;
-      margin: 10px; }
+      margin: 60px 10px 0; }
   .team .owl-dots .owl-dot {
     outline: none; }
     .team .owl-dots .owl-dot.active span {
       background-color: #19bd9a; }
+
+/*-------------------------------------------------*/
+.button-contact {
+  background-image: url(../images/already_bg_02.jpg);
+  background-color: #161616;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px 56px; }
+  .button-contact h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 44px;
+    color: #ffffff; }
+  .button-contact a {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 12px 22px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    text-decoration: none; }
+
+/*------------------------------------------------*/
+.testimonials {
+  padding: 80px 15px 100px;
+  background-color: #f3f3f3; }
+  .testimonials p {
+    margin-bottom: 66px; }
 
 /*# sourceMappingURL=style.css.map */
