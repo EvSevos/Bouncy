@@ -605,5 +605,35 @@ header {
   background-color: #f3f3f3; }
   .testimonials p {
     margin-bottom: 66px; }
+  .testimonials .coment {
+    background-color: #ffffff;
+    padding: 52px 15px 60px; }
+    .testimonials .coment .col-sm-2 {
+      margin-bottom: 20px; }
+      .testimonials .coment .col-sm-2 .foto-coment {
+        max-width: 130px; }
+    .testimonials .coment p {
+      margin-bottom: 34px; }
+      .testimonials .coment p span {
+        color: #19bd9a;
+        font-size: 16px;
+        margin-bottom: 55px; }
+      .testimonials .coment p:nth-of-type(2) {
+        font-size: 14px;
+        color: #464646; }
+    .testimonials .coment .owl-dots {
+      text-align: center; }
+      .testimonials .coment .owl-dots .owl-dot span {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        background-color: #ffffff;
+        border: #19bd9a solid 1px;
+        border-radius: 50%;
+        margin-right: 10px; }
+    .testimonials .coment .owl-dots .owl-dot {
+      outline: none; }
+      .testimonials .coment .owl-dots .owl-dot.active span {
+        background-color: #19bd9a; }
 
 /*# sourceMappingURL=style.css.map */
