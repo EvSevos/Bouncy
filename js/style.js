@@ -109,3 +109,8 @@ document.addEventListener("DOMContentLoaded", function() {
         return Math.random() * (max - min) + min;
     }
 });
+
+/*--------GALEREYA---------*/
+$('.item').click(function() {
+    $(this).toggleClass('active');
+});
