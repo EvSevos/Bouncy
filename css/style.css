@@ -692,6 +692,50 @@ header {
     .news .owl-dots .owl-dot.active span {
       background-color: #ffffff; }
 
+/*------Price--------------------------------------------*/
+.price {
+  background-color: #f3f3f3;
+  padding: 80px 15px 100px; }
+  .price p {
+    margin-bottom: 66px; }
+  .price .col-sm-4 .thumbnail {
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px; }
+    .price .col-sm-4 .thumbnail .caption {
+      background-color: #19bd9a;
+      padding: 30px 15px; }
+      .price .col-sm-4 .thumbnail .caption a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+        letter-spacing: 3px;
+        text-decoration: none; }
+    .price .col-sm-4 .thumbnail .cost {
+      padding: 70px 15px 0;
+      height: 238px; }
+      .price .col-sm-4 .thumbnail .cost p {
+        font-size: 20px; }
+        .price .col-sm-4 .thumbnail .cost p span {
+          color: #19bd9a;
+          font-family: "Open Sans", sans-serif;
+          font-size: 42px;
+          font-weight: 900; }
+  .price .col-sm-4:nth-of-type(2) .cost {
+    padding-top: 36px; }
+    .price .col-sm-4:nth-of-type(2) .cost p {
+      font-size: 14px; }
+  .price .col-sm-4:nth-of-type(2) .caption a:after {
+    display: inline-block;
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 8px; }
+
 /*-------------------------------------------------------------*/
 /*----MAP-------------------------------*/
 .map .googlemaps {
