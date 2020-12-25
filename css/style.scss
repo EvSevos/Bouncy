@@ -944,9 +944,7 @@ header {
         color: #464646;
       }
     }
-.owl-item{
 
-}
     .owl-dots {
       text-align: center;
 
@@ -959,18 +957,89 @@ header {
         border-radius: 50%;
         margin-right: 10px;
       }
-
     }
-
-
     .owl-dots .owl-dot {
       outline: none;
 
       &.active span {
         background-color: #19bd9a;
       }
-
     }
+  }
+}
+
+/*-----------------------------------*/
+.map{
+  .googlemaps{
+    width: 100%;
+    height: 500px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+//*---
+// -----------------------------*//
+footer{
+  padding: 80px 15px 90px;
+  .logo-f{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 25px;
+  }
+  p{
+    margin-bottom: 40px;
+  }
+  .soc {
+    a {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #3b5998;
+      text-decoration: none;
+      padding-top: 5px;
+      margin: 0 6px 0;
+      &:before{
+        content: "\f39e";
+        color: #ffffff;
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        font-size: 12px;
+        display: block;
+      }
+      &:nth-of-type(2) {
+        background-color: #26a6d1;
+        &:before {
+          content: "\f099";
+          font-weight: 900;
+        }
+      }
+      &:nth-of-type(3) {
+        background-color: #0e76a8;
+        &:before {
+          content: "\f0e1";
+          font-weight: 900;
+        }
+      }
+      &:nth-of-type(4) {
+        background-color: #3f729b;
+        &:before {
+          content: "\f0c7";
+          font-weight: 400;
+          font-family: "Font Awesome 5 Free";
+        }
+      }
+      &:nth-of-type(5) {
+        background-color: #86c9ef;
+        &:before {
+          content: "\f27d";
+          font-weight: 900;
+        }
+      }
+    }
+
   }
 
 }
