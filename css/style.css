@@ -658,12 +658,19 @@ header {
       margin-bottom: 60px; }
       .news .col-sm-6 p:first-of-type i span {
         color: #19bd9a; }
+  .news .col-sm-6 #more {
+    display: none; }
+  .news .col-sm-6 #more2 {
+    display: none; }
+  .news .col-sm-6 #more3 {
+    display: none; }
   .news .col-sm-6 a {
-    display: block;
     color: #b2b3b3;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    text-decoration: none; }
+    text-decoration: none;
+    border: none;
+    background-color: transparent; }
   .news .owl-dots {
     display: flex;
     flex-direction: column;

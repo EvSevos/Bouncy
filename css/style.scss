@@ -999,12 +999,17 @@ header {
       }
       }
     }
+    #more {display: none;}
+    #more2 {display: none;}
+    #more3 {display: none;}
+
     a{
-      display: block;
       color: #b2b3b3;
       font-family: $font-main;
       font-size: 16px;
       text-decoration: none;
+      border: none;
+      background-color: transparent;
     }
   }
   .owl-dots {
