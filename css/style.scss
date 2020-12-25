@@ -193,15 +193,21 @@ header {
       margin-bottom: 36px;
       text-align: left;
     }
-
-    a {
-      text-decoration: none;
+    #more {display: none;}
+    button{
+      background-color: transparent;
       color: #000000;
       font-size: 16px;
       font-family: $font-main;
       border: 1px solid #000000;
       border-radius: 25px;
       padding: 10px 30px;
+      outline: none;
+      @include max-screen(767px) {
+        text-align: center;
+        }
+
+
     }
   }
 
@@ -1010,7 +1016,7 @@ header {
       }
     }
 
-    #more {
+    #more1 {
       display: none;
     }
 
@@ -1135,8 +1141,47 @@ header {
     }
   }
 }
+/*-------------------------------------------------------*/
+.subscribe {
+  background-image: url('../images/subscribe_bg_02.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 15px 100px;
 
-/*-------------------------------------------------------------*/
+  h3 {
+    color: #ffffff;
+  }
+
+  p {
+    margin-bottom: 66px;
+  }
+
+  form {
+    @include max-screen(767px){
+      text-align: center;
+    }
+
+    input {
+      border: 1px solid #81868e;
+      padding: 17px 15px 14px;
+      background-color: transparent;
+
+      @include max-screen(767px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    button {
+      background-color: $main-color;
+      padding: 16px 15px 14px;
+      color: #ffffff;
+      border: none;
+      font-family: $font-main;
+      font-size: 14px;
+    }
+  }
+}
+  /*-------------------------------------------------------------*/
 .contact {
   background-color: #f3f3f3;
   padding: 80px 15px 100px;
