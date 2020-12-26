@@ -1245,14 +1245,60 @@ header {
         font-size: 16px;
         margin-bottom: 25px;
       }
-    }
+      p{
+        margin-bottom: 0;
+      }
 
+    }
+    @include max-screen(992px) {
+      &:nth-of-type(2n-1) {
+        .caption {
+          padding-bottom: 56px;
+        }
+      }
+    }
+    @include max-screen(767px) {
+      &:nth-of-type(2n-1) {
+        .caption {
+          padding-bottom: 30px;
+        }
+      }
+    }
 
   }
 
+
 }
+/*--FORMS--------------------------------------*/
+.forms{
+  padding: 80px 15px 100px;
+  .col-sm-4 {
+    input {
+      padding: 16px 15px 15px;
+      border: #d8dce0 1px solid;
+      border-radius: 0;
+      outline: none;
+      margin-bottom: 30px;
+    }
+  }
+  textarea{
+    border: #d8dce0 1px solid;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 30px;
+    resize: none;
+  }
+  button{
 
-
+    padding: 22px 15px 21px;
+    background-color: $main-color;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    display: flex;
+    justify-content: center;
+  }
+}
 /*----MAP-------------------------------*/
 .map {
   .googlemaps {

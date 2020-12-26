@@ -814,6 +814,38 @@ header {
     .contact .col-sm-4 .caption h4 {
       font-size: 16px;
       margin-bottom: 25px; }
+    .contact .col-sm-4 .caption p {
+      margin-bottom: 0; }
+  @media screen and (max-width: 992px) {
+    .contact .col-sm-4:nth-of-type(2n-1) .caption {
+      padding-bottom: 56px; } }
+  @media screen and (max-width: 767px) {
+    .contact .col-sm-4:nth-of-type(2n-1) .caption {
+      padding-bottom: 30px; } }
+
+/*--FORMS--------------------------------------*/
+.forms {
+  padding: 80px 15px 100px; }
+  .forms .col-sm-4 input {
+    padding: 16px 15px 15px;
+    border: #d8dce0 1px solid;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 30px; }
+  .forms textarea {
+    border: #d8dce0 1px solid;
+    border-radius: 0;
+    outline: none;
+    margin-bottom: 30px;
+    resize: none; }
+  .forms button {
+    padding: 22px 15px 21px;
+    background-color: #19bd9a;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    display: flex;
+    justify-content: center; }
 
 /*----MAP-------------------------------*/
 .map .googlemaps {
