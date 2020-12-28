@@ -73,16 +73,16 @@ header {
       color: #ffffff;
       font-size: 16px;
       font-family: & font-main;
-      padding-top: 5px;
-      padding-bottom: 5px;
       line-height: 14px;
+      border:1px solid transparent;
+      border-radius: 25px;
+      padding-bottom: 10px;
+      padding-top: 10px;
 
       &:hover {
         color: white;
         border: white 1px solid;
-        border-radius: 25px;
-        padding-bottom: 12px;
-        padding-top: 12px;
+
 
       }
 
@@ -91,7 +91,7 @@ header {
         border: white 1px solid;
         border-radius: 25px;
         padding-bottom: 12px;
-        padding-top: 12px;
+        padding-top: 10px;
       }
     }
 
@@ -240,22 +240,28 @@ header {
   padding-bottom: 100px;
 
   .col-sm-6 {
-
-
     p {
       color: #81868e;
       margin-bottom: 66px;
     }
+/*--------Tabs------------------*/
+    .tab {
+      overflow: hidden;
+      border: none;
+      background-color: transparent;
+      }
 
-    a {
+    .tab button {
       display: inline-block;
       width: 56px;
       height: 56px;
       background-color: #81868e;
+      border: 1px solid #81868e;
       border-radius: 50%;
       margin: 0 12px 66px;
-      padding-top: 12px;
+      padding-top: 0px;
       text-decoration: none;
+      outline: none;
 
       &:before {
         content: "\f004";
@@ -268,6 +274,7 @@ header {
 
       &:hover {
         background-color: #19bd9a;
+        border: 1px solid $main-color;
       }
 
       &:nth-of-type(2) {
@@ -276,6 +283,7 @@ header {
           font-weight: 900;
         }
       }
+
 
       &:nth-of-type(3) {
         &:before {
@@ -286,13 +294,15 @@ header {
     }
 
   }
+
 }
 
 
-.col-sm-12 {
+.tabcontent {
   text-align: left;
-  display: flex;
-  align-items: flex-end;
+  /*display: flex;
+  align-items: flex-end;*/
+
 
   h4 {
     font-family: $font-main;
@@ -303,6 +313,19 @@ header {
   p {
     text-align: left
   }
+  .col-sm-4 {
+    p {
+      line-height: 19px;
+    }
+  }
+  .col-sm-7 {
+    margin-top:70px ;
+    p {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
 }
 
 /*------------------*/
@@ -330,24 +353,27 @@ header {
         color: #ffffff;
         visibility: hidden;
         top: 40%;
-        left: 28%;
+        left: 25%;
         z-index: 3;
+        }
+      &:nth-of-type(2){
+        left: 0;
       }
 
       @include max-screen(1024px) {
         h3 {
           left: 20%;
-        }
+          }
       }
       @include max-screen(992px) {
         h3 {
-          left: 5%;
+          left: 30%;
         }
       }
 
       @include max-screen(767px) {
         h3 {
-          left: 40%;
+          left: 25%;
         }
       }
 
@@ -376,6 +402,21 @@ header {
 
         }
       }
+    }
+    @include max-screen(992px) {
+      .col-sm-6 {
+        width: 100%;
+              }
+      .col-sm-3 {
+        width: 50%;
+      }
+
+    }
+
+    @include max-screen(767px) {
+      .col-sm-3{
+        width:100%;
+        }
     }
 
 

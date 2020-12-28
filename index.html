@@ -38,13 +38,13 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#yak1">Hello</a></li>
-                            <li><a href="#yak2">About</a></li>
-                            <li><a href="#yak3">Services</a></li>
-                            <li><a href="#yak4">Portfolio</a></li>
-                            <li><a href="#yak5">Team</a></li>
-                            <li><a href="#yak6">Blog</a></li>
-                            <li><a href="#yak7">Contact</a></li>
+                            <li><a href="#Hello">Hello</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Services">Services</a></li>
+                            <li><a href="#Portfolio">Portfolio</a></li>
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#Blog">Blog</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -72,7 +72,7 @@
 </section>
 
 <section class="bouncy">
-    <div id="yak1"></div>
+    <div id="Hello"></div>
     <div class="container ">
         <div class="row ">
 
@@ -97,37 +97,104 @@
 </section>
 
 <section class="details">
-    <div id="yak2"></div>
+    <div id="About"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
                 <h3 class="text-uppercase text-center">DetailS ABOUT BOUNCY</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <h4>Creative Ideas</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum
-                            deleniti atque corrupti quos dolores </p>
-                    </div>
-                    <div class="col-sm-7 col-sm-offset-1">
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum
-                            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
-                            non
-                            provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-                            dolorum fuga. Et harum quidem r</p>
-                    </div>
+                <!-- Ссылки вкладки -->
+                <div class="tab">
+                    <button class="tablinks" onclick="openIdea(event, 'creative')" id="defaultOpen"></button>
+                    <button class="tablinks" onclick="openIdea(event, 'available')"></button>
+                    <button class="tablinks" onclick="openIdea(event, 'innovative')"></button>
                 </div>
             </div>
+
+        </div>
+    </div>
+
+                <!-- Содержимое вкладки -->
+    <div class="container">
+                <div id="creative" class="tabcontent">
+                    <div class="row">
+                            <div class="col-sm-4 col-xs-12">
+                                <h4>Creative Ideas</h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores </p>
+                            </div>
+                            <div class="col-sm-7 col-sm-offset-1 col-xs-12">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                    cupiditate
+                                    non
+                                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                                    laborum et
+                                    dolorum fuga. Et harum quidem r</p>
+                            </div>
+
+                        </div>
+
+                </div>
+
+                <div id="available" class="tabcontent">
+
+                    <div class="row">
+
+
+                            <div class="col-sm-4 col-xs-12">
+                                <h4>Available Ideas</h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores </p>
+                            </div>
+                            <div class="col-sm-7 col-sm-offset-1 col-xs-12">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                    cupiditate
+                                    non
+                                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                                    laborum et
+                                    dolorum fuga. Et harum quidem r</p>
+                            </div>
+
+
+                    </div>
+                </div>
+
+                <div id="innovative" class="tabcontent">
+                    <div class="row">
+
+
+                            <div class="col-sm-4 col-xs-12">
+                                <h4>Innovative Ideas</h4>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores </p>
+                            </div>
+                            <div class="col-sm-7 col-sm-offset-1 col-xs-12">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                                    cupiditate
+                                    non
+                                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
+                                    laborum et
+                                    dolorum fuga. Et harum quidem r</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
         </div>
     </div>
 </section>
+
 
 <section class="projects">
     <div class="container">
@@ -145,13 +212,13 @@
             <div class="col-sm-6 item">
                 <img class="img-fluid" src="images/proj_1_02.png" alt="img1">
             </div>
-            <div class="col-sm-3 item">
+            <div class="col-sm-3 item text-center">
                 <img class="img-fluid" src="images/proj_2_03.png" alt="img2">
-                <h3 class="text-uppercase "> vintage</h3>
+                <h3 class="text-uppercase text-center"> vintage</h3>
             </div>
             <div class="col-sm-3 item">
                 <img class="img-fluid" src="images/proj_3_03.png" alt="img3">
-                <h3 class="text-uppercase ">branding</h3>
+                <h3 class="text-uppercase text-center">branding</h3>
             </div>
         </div>
     </div>
@@ -170,7 +237,7 @@
 </section>
 
 <section class="services">
-    <div id="yak3"></div>
+    <div id="Services"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -251,7 +318,7 @@
 
 
 <section class="portfolio">
-    <div id="yak4"></div>
+    <div id="Portfolio"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -325,7 +392,7 @@
 </section>
 
 <section class="team">
-    <div id="yak5"></div>
+    <div id="Team"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -585,7 +652,7 @@
 </section>
 
 <section class="testimonials">
-    <div id="yak6"></div>
+    <div id="Blog"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -800,7 +867,7 @@
 
 <!------------------------------------------------>
 <section class="contact">
-    <div id="yak7"></div>
+    <div id="Contact"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -892,13 +959,14 @@
 
                 <div class="form-group">
                     <div class="col-sm-12">
-                    <textarea class="form-control" rows="9"></textarea>
-                </div>
+                        <textarea class="form-control" rows="9"></textarea>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <div class="col-sm-12 ">
-                        <button type="submit" class=" col-sm-12 col-xs-12 text-uppercase text-center">SUBMIT NOW</button>
+                        <button type="submit" class=" col-sm-12 col-xs-12 text-uppercase text-center">SUBMIT NOW
+                        </button>
                     </div>
 
                 </div>
