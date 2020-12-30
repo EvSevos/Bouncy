@@ -289,6 +289,7 @@ header {
       padding: 12px 20px 10px;
       border: 1px solid #ffffff;
       border-radius: 25px;
+      margin-left: 0;
       text-decoration: none; }
 
 /*--------------------------------------------------------------*/
@@ -393,7 +394,7 @@ header {
     max-width: 410px;
     position: absolute;
     top: -130px;
-    right: -150px; }
+    right: -100px; }
     .impressed .col-sm-4 .monitor img {
       width: 100%;
       display: block; }
@@ -412,7 +413,31 @@ header {
 .portfolio {
   padding: 80px 15px 100px;
   background-color: #f3f3f3;
-  /*-Galereya------------------------------*/ }
+  /*-Galereya------------------------------*/
+  /*-------╤А╨╡╨░╨╗╨╕╨╖╨░╤Ж╨╕╤П ╤З╨╡╤А╨╡╨╖ nth-------------------------
+
+  .item {
+    &:nth-of-type(3) .overlay {
+      padding: 0px 35px 0 40px;
+      font-size: 16px;
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        &:after {
+          margin-top: 7px;
+
+        }
+      }
+
+      p {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  */ }
   .portfolio p {
     margin-bottom: 86px; }
   .portfolio .nav-tabs {
@@ -446,11 +471,11 @@ header {
     .portfolio .nav-tabs > li.active > a:after, .portfolio .nav-tabs > li.active > a:focus:after, .portfolio .nav-tabs > li.active > a:hover:after, .portfolio .nav-tabs > li > a:hover:after {
       visibility: visible; }
   .portfolio #masonry {
-    column-count: 2;
+    column-count: 1;
     column-gap: 1em; }
   @media (min-width: 30em) {
     .portfolio #masonry {
-      column-count: 3;
+      column-count: 2;
       column-gap: 1em; } }
   @media (min-width: 40em) {
     .portfolio #masonry {
@@ -461,18 +486,285 @@ header {
     display: inline-block;
     margin: 0 0 1em 0;
     width: 100%;
-    cursor: pointer; }
-  .portfolio .item img {
-    max-width: 100%;
-    height: auto;
+    cursor: pointer;
+    position: relative; }
+    .portfolio .item img {
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      /*idk why but this fix stuff*/ }
+    .portfolio .item:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0; }
+  .portfolio .overlay {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    /* Black see-through */
     width: 100%;
-    margin-bottom: -4px;
-    /*idk why but this fix stuff*/ }
+    height: 100%;
+    transition: .3s ease;
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    padding: 20px 35px 0 40px;
+    text-align: justify;
+    visibility: hidden; }
+    .portfolio .overlay h3 {
+      color: #19bd9a;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 4px; }
+      .portfolio .overlay h3:after {
+        display: block;
+        content: "";
+        border-bottom: none;
+        width: 25px;
+        height: 2px;
+        margin-top: 20px;
+        margin-left: 0;
+        background-color: #19bd9a; }
+    .portfolio .overlay p {
+      margin-bottom: 60px; }
+    .portfolio .overlay a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #000000;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      margin: 20px 12px;
+      padding-top: 4px;
+      padding-left: 7px;
+      text-decoration: none;
+      outline: none; }
+      .portfolio .overlay a:before {
+        display: block;
+        content: "\f0c1";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #ffffff;
+        font-size: 14px; }
+      .portfolio .overlay a:nth-of-type(2):before {
+        content: "\f004";
+        font-weight: 400; }
+  @media screen and (max-width: 1024px) {
+    .portfolio .overlay h3 {
+      margin-bottom: 20px; }
+    .portfolio .overlay p {
+      margin-bottom: 20px; }
+    .portfolio .overlay a {
+      margin-top: 0; } }
+  @media screen and (max-width: 768px) {
+    .portfolio .overlay {
+      font-size: 14px;
+      padding: 0 15px; }
+      .portfolio .overlay h3 {
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        font-size: 16px; }
+        .portfolio .overlay h3:after {
+          margin-top: 10px; }
+      .portfolio .overlay p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 20px; }
+      .portfolio .overlay a {
+        width: 25px;
+        height: 25px;
+        margin: 5px 7px;
+        padding-top: 4px;
+        padding-left: 7px; }
+        .portfolio .overlay a:before {
+          font-size: 10px; } }
+  @media screen and (max-width: 414px) {
+    .portfolio .overlay {
+      padding: 20px 35px 0 40px; }
+      .portfolio .overlay h3 {
+        letter-spacing: 4px;
+        margin-bottom: 60px;
+        font-size: 20px; }
+        .portfolio .overlay h3:after {
+          margin-top: 7px; }
+      .portfolio .overlay p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 60px; }
+      .portfolio .overlay a {
+        width: 30px;
+        height: 30px;
+        margin: 20px 12px;
+        padding-top: 4px;
+        padding-left: 7px; }
+        .portfolio .overlay a:before {
+          font-size: 14px; } }
+  @media screen and (max-width: 414px) {
+    .portfolio .overlay p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 40px; }
+    .portfolio .overlay a {
+      width: 30px;
+      height: 30px;
+      margin: 20px 12px;
+      padding-top: 4px;
+      padding-left: 7px; }
+      .portfolio .overlay a:before {
+        font-size: 14px; } }
+  .portfolio .overlay_small {
+    position: absolute;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.7);
+    /* Black see-through */
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    opacity: 1;
+    color: white;
+    padding: 0px 35px 0 40px;
+    font-size: 16px;
+    text-align: justify;
+    visibility: hidden; }
+    .portfolio .overlay_small h3 {
+      color: #19bd9a;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 4px;
+      font-size: 18px;
+      margin-bottom: 20px; }
+      .portfolio .overlay_small h3:after {
+        display: block;
+        content: "";
+        border-bottom: none;
+        width: 25px;
+        height: 2px;
+        margin-top: 7px;
+        margin-left: 0;
+        background-color: #19bd9a; }
+    .portfolio .overlay_small p {
+      font-size: 12px;
+      margin-bottom: 10px; }
+    .portfolio .overlay_small a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #000000;
+      border: 1px solid #000000;
+      border-radius: 50%;
+      margin: 20px 12px;
+      padding-top: 4px;
+      padding-left: 7px;
+      text-decoration: none;
+      outline: none; }
+      .portfolio .overlay_small a:before {
+        display: block;
+        content: "\f0c1";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #ffffff;
+        font-size: 14px; }
+      .portfolio .overlay_small a:nth-of-type(2):before {
+        content: "\f004";
+        font-weight: 400; }
+  @media screen and (max-width: 1024px) {
+    .portfolio .overlay_small h3 {
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      font-size: 16px; }
+      .portfolio .overlay_small h3:after {
+        margin-top: 10px; }
+    .portfolio .overlay_small p {
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 10px; }
+    .portfolio .overlay_small a {
+      margin-top: 0; } }
+  @media screen and (max-width: 768px) {
+    .portfolio .overlay_small {
+      padding: 0 15px; }
+      .portfolio .overlay_small h3 {
+        letter-spacing: 2px;
+        margin-bottom: 7px;
+        font-size: 14px; }
+        .portfolio .overlay_small h3:after {
+          margin-top: 7px; }
+      .portfolio .overlay_small p {
+        font-size: 10px;
+        line-height: 10px;
+        margin-bottom: 10px; }
+      .portfolio .overlay_small a {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        padding-top: 4px;
+        padding-left: 6px; }
+        .portfolio .overlay_small a:before {
+          font-size: 10px; } }
+  @media screen and (max-width: 414px) {
+    .portfolio .overlay_small {
+      padding: 20px 35px 15px 40px; }
+      .portfolio .overlay_small h3 {
+        letter-spacing: 4px;
+        font-size: 18px;
+        margin-bottom: 20px; }
+        .portfolio .overlay_small h3:after {
+          margin-top: 7px; }
+      .portfolio .overlay_small p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 10px; }
+      .portfolio .overlay_small a {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        padding-top: 4px;
+        padding-left: 6px; }
+        .portfolio .overlay_small a:before {
+          font-size: 10px; } }
+  @media screen and (max-width: 320px) {
+    .portfolio .overlay_small {
+      padding: 0px 15px; }
+      .portfolio .overlay_small h3 {
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin-bottom: 10px; }
+        .portfolio .overlay_small h3:after {
+          margin-top: 7px; }
+      .portfolio .overlay_small p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px; }
+      .portfolio .overlay_small a {
+        width: 30px;
+        height: 30px;
+        margin: 20px 12px;
+        padding-top: 4px;
+        padding-left: 7px; }
+        .portfolio .overlay_small a:before {
+          font-size: 14px; } }
+  .portfolio .item:hover .overlay {
+    visibility: visible;
+    z-index: 5; }
+  .portfolio .item.active .overlay {
+    visibility: hidden;
+    z-index: 5; }
+  .portfolio .item:hover .overlay_small {
+    visibility: visible;
+    z-index: 6; }
+  .portfolio .item.active .overlay_small {
+    visibility: hidden;
+    z-index: 5; }
   .portfolio .item.active {
     animation-name: active-in;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-direction: alternate; }
+    animation-direction: alternate;
+    position: absolute;
+    z-index: 7; }
   .portfolio .item.active:before {
     content: "+";
     transform: rotate(45deg);
@@ -490,7 +782,7 @@ header {
     z-index: 12; }
   .portfolio .item.active img {
     animation-name: active-in-img;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-direction: alternate; }
 @keyframes active-in {
