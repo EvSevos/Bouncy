@@ -148,6 +148,10 @@ header {
       @media screen and (max-width: 767px) {
         .bouncy .col-sm-5 button {
           text-align: center; } }
+      .bouncy .col-sm-5 button:hover {
+        background-color: #19bd9a;
+        color: #ffffff;
+        border: none; }
   .bouncy .col-sm-3 {
     order: 2; }
     .bouncy .col-sm-3 img {
@@ -291,6 +295,9 @@ header {
       border-radius: 25px;
       margin-left: 0;
       text-decoration: none; }
+      .projects .brend a:hover {
+        background-color: #ffffff;
+        color: #19bd9a; }
 
 /*--------------------------------------------------------------*/
 .services {
@@ -300,27 +307,36 @@ header {
   /*╨║╤А╤Г╨│╨╛╨▓╨╛╨╣ ╨┐╤А╨╛╨│╤А╨╡╤Б╤Б-╨▒╨░╤А--*/ }
   .services p {
     margin-bottom: 66px; }
-  .services .col-sm-6 .col-sm-2 a {
-    display: block;
-    width: 53px;
-    height: 53px;
+  .services .col-sm-6 .col-sm-2 .tab {
+    border: none;
+    background-color: transparent; }
+  .services .col-sm-6 .col-sm-2 .tab button {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
     background-color: #81868e;
+    border: 1px solid #81868e;
     border-radius: 50%;
+    margin: 0 12px 18px;
+    padding-top: 0px;
     text-decoration: none;
-    padding-top: 10px;
-    padding-left: 12px;
-    margin-bottom: 18px; }
-    .services .col-sm-6 .col-sm-2 a:hover {
-      background-color: #19bd9a; }
-  .services .col-sm-6 .col-sm-9.col-xs-9 h4 {
+    outline: none; }
+    .services .col-sm-6 .col-sm-2 .tab button:hover {
+      background-color: #19bd9a;
+      border: 1px solid #19bd9a; }
+  @media screen and (max-width: 365px) {
+    .services .col-sm-6 .col-sm-2 .tab button {
+      width: 44px;
+      height: 44px; } }
+  .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #464646;
     margin-bottom: 40px; }
-  .services .col-sm-6 .col-sm-9.col-xs-9 p {
+  .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 p {
     text-align: left;
     margin-bottom: 40px; }
-    .services .col-sm-6 .col-sm-9.col-xs-9 p span {
+    .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 p span {
       color: #19bd9a;
       font-weight: 600; }
   .services .col-sm-6 .bg-style {
@@ -334,10 +350,16 @@ header {
         font-size: 16px;
         color: #81868e;
         display: block; }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 365px) {
     .services .col-sm-6 .bg-style {
-      flex-wrap: wrap;
-      margin-top: 0; } }
+      flex-direction: column; }
+      .services .col-sm-6 .bg-style .item {
+        width: 100%; }
+        .services .col-sm-6 .bg-style .item span {
+          margin-top: 15px;
+          font-size: 16px;
+          color: #81868e;
+          display: block; } }
   .services .col-sm-6 .counter {
     display: inline-flex;
     cursor: pointer;
@@ -842,6 +864,9 @@ header {
       border: 1px solid #ffffff;
       border-radius: 25px;
       text-decoration: none; }
+      .portfolio .progect-start .start a:hover {
+        background-color: #ffffff;
+        color: #19bd9a; }
 
 /*----------------------------------------------------------*/
 .team {

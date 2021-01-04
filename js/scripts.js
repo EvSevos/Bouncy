@@ -225,3 +225,4 @@ function openIdea(event, ideaName) {
 
 // Получите элемент с id="defaultOpen" и нажмите на него
 document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen1").click();

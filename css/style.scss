@@ -210,6 +210,11 @@ header {
       @include max-screen(767px) {
         text-align: center;
       }
+      &:hover{
+        background-color: $main-color;
+        color: #ffffff;
+        border: none;
+      }
 
 
     }
@@ -454,6 +459,10 @@ header {
       border-radius: 25px;
 margin-left: 0;
       text-decoration: none;
+      &:hover{
+        background-color: #ffffff;
+        color: $main-color;
+      }
 
     }
   }
@@ -472,23 +481,41 @@ margin-left: 0;
   .col-sm-6 {
 
     .col-sm-2 {
-      a {
-        display: block;
-        width: 53px;
-        height: 53px;
+      .tab {
+
+        border: none;
+        background-color: transparent;
+      }
+
+      .tab button {
+        display: inline-block;
+        width: 54px;
+        height: 54px;
         background-color: #81868e;
+        border: 1px solid #81868e;
         border-radius: 50%;
+        margin: 0 12px 18px;
+        padding-top: 0px;
         text-decoration: none;
-        padding-top: 10px;
-        padding-left: 12px;
-        margin-bottom: 18px;
+        outline: none;
+
+
+
 
         &:hover {
-          background-color: #19bd9a;;
+          background-color: #19bd9a;
+          border: 1px solid $main-color;
         }
       }
-    }
+      @include max-screen(365px) {
+        .tab button {
+          width: 44px;
+          height: 44px;
+        }
+      }
 
+    }
+.tabcontent{
     .col-sm-9.col-xs-9 {
       h4 {
         font-family: $font-main;
@@ -507,7 +534,7 @@ margin-left: 0;
         }
 
       }
-
+    }
     }
   }
 
@@ -526,15 +553,22 @@ margin-left: 0;
           font-size: 16px;
           color: #81868e;
           display: block;
-
         }
       }
     }
 
-    @include max-screen(992px) {
+    @include max-screen(365px) {
       .bg-style {
-        flex-wrap: wrap;
-        margin-top: 0;
+        flex-direction: column;
+        .item {
+          width: 100%;
+          span {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #81868e;
+            display: block;
+          }
+        }
       }
     }
 
@@ -1286,6 +1320,10 @@ margin-left: 0;
         border: 1px solid #ffffff;
         border-radius: 25px;
         text-decoration: none;
+        &:hover{
+          background-color: #ffffff;
+          color: $main-color;
+        }
       }
     }
   }
