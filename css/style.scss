@@ -78,7 +78,11 @@ header {
       border-radius: 25px;
       padding-bottom: 10px;
       padding-top: 10px;
-
+      @include max-screen(767px){
+        line-height: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px
+      }
       &:hover {
         color: white;
         border: white 1px solid;

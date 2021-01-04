@@ -54,6 +54,11 @@ header {
       border-radius: 25px;
       padding-bottom: 10px;
       padding-top: 10px; }
+      @media screen and (max-width: 767px) {
+        header .navbar-default .navbar-nav > li > a {
+          line-height: 10px;
+          padding-bottom: 5px;
+          padding-top: 5px; } }
       header .navbar-default .navbar-nav > li > a:hover {
         color: white;
         border: white 1px solid; }
