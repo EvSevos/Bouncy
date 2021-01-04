@@ -208,6 +208,7 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
 /*-------------tabs---------------*/
 function openIdea(event, ideaName) {
     var i, tabcontent, tablinks;
@@ -226,3 +227,10 @@ function openIdea(event, ideaName) {
 // Получите элемент с id="defaultOpen" и нажмите на него
 document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpen1").click();
+
+/*-----scroll--------------------------*/
+$(document).ready(function () {
+    if (!$.browser.webkit) {
+        $('.wrapper').html('<p>Sorry! Non webkit users. :(</p>');
+    }
+});
