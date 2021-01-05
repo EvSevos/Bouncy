@@ -78,11 +78,12 @@ header {
       border-radius: 25px;
       padding-bottom: 10px;
       padding-top: 10px;
-      @include max-screen(767px){
+      @include max-screen(767px) {
         line-height: 10px;
         padding-bottom: 5px;
         padding-top: 5px
       }
+
       &:hover {
         color: white;
         border: white 1px solid;
@@ -214,7 +215,8 @@ header {
       @include max-screen(767px) {
         text-align: center;
       }
-      &:hover{
+
+      &:hover {
         background-color: $main-color;
         color: #ffffff;
         border: none;
@@ -290,6 +292,12 @@ header {
         background-color: #19bd9a;
         border: 1px solid $main-color;
       }
+
+      &.active {
+        background-color: #19bd9a;
+        border: 1px solid $main-color;
+      }
+
 
       &:nth-of-type(2) {
         &:before {
@@ -461,9 +469,10 @@ header {
       padding: 12px 20px 10px;
       border: 1px solid #ffffff;
       border-radius: 25px;
-margin-left: 0;
+      margin-left: 0;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         background-color: #ffffff;
         color: $main-color;
       }
@@ -503,14 +512,17 @@ margin-left: 0;
         text-decoration: none;
         outline: none;
 
-
-
-
         &:hover {
           background-color: #19bd9a;
           border: 1px solid $main-color;
         }
+
+        &:hover.active {
+          background-color: #19bd9a;
+          border: 1px solid $main-color;
+        }
       }
+
       @include max-screen(365px) {
         .tab button {
           width: 44px;
@@ -519,26 +531,27 @@ margin-left: 0;
       }
 
     }
-.tabcontent{
-    .col-sm-9.col-xs-9 {
-      h4 {
-        font-family: $font-main;
-        font-size: 20px;
-        color: #464646;
-        margin-bottom: 40px;
-      }
 
-      p {
-        text-align: left;
-        margin-bottom: 40px;
-
-        span {
-          color: #19bd9a;
-          font-weight: 600;
+    .tabcontent1 {
+      .col-sm-9.col-xs-9 {
+        h4 {
+          font-family: $font-main;
+          font-size: 20px;
+          color: #464646;
+          margin-bottom: 40px;
         }
 
+        p {
+          text-align: left;
+          margin-bottom: 40px;
+
+          span {
+            color: #19bd9a;
+            font-weight: 600;
+          }
+
+        }
       }
-    }
     }
   }
 
@@ -564,8 +577,10 @@ margin-left: 0;
     @include max-screen(365px) {
       .bg-style {
         flex-direction: column;
+
         .item {
           width: 100%;
+
           span {
             margin-top: 15px;
             font-size: 16px;
@@ -947,7 +962,7 @@ margin-left: 0;
 
   @include max-screen(414px) {
     .overlay {
-           p {
+      p {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 40px;
@@ -1324,7 +1339,8 @@ margin-left: 0;
         border: 1px solid #ffffff;
         border-radius: 25px;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
           background-color: #ffffff;
           color: $main-color;
         }
@@ -1362,50 +1378,45 @@ margin-left: 0;
       margin-top: 25px;
     }
 
-    @include max-screen(375px){
-    .scrollbar {
-      max-width: 345px;
-      padding: 15px;
+    @include max-screen(375px) {
+      .scrollbar {
+        max-width: 345px;
+        padding: 15px;
+      }
     }
-  }
-    @include max-screen(320px){
+    @include max-screen(320px) {
       .scrollbar {
         max-width: 300px;
         padding: 15px;
       }
     }
 
-    .force-overflow
-    {
+    .force-overflow {
       min-height: 20px;
       margin-right: 40px;
     }
 
 
-
-    #style-scroll::-webkit-scrollbar-track
-    {
+    #style-scroll::-webkit-scrollbar-track {
 
       border-radius: 0;
       background-color: transparent;
     }
 
-    #style-scroll::-webkit-scrollbar
-    {
+    #style-scroll::-webkit-scrollbar {
       width: 5px;
-      height: 40px!important;
+      height: 40px !important;
 
 
     }
 
-    #style-scroll::-webkit-scrollbar-thumb
-    {position: absolute;
+    #style-scroll::-webkit-scrollbar-thumb {
+      position: absolute;
       border-radius: 0px;
       background-color: $main-color;
-      height: 40px!important;
+      height: 40px !important;
 
     }
-
 
 
     h5 {
@@ -1499,7 +1510,8 @@ margin-left: 0;
     border: 1px solid #ffffff;
     border-radius: 25px;
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       background-color: #ffffff;
       color: #000000;
     }
@@ -1625,7 +1637,8 @@ margin-left: 0;
       text-decoration: none;
       border: none;
       background-color: transparent;
-      &:hover{
+
+      &:hover {
         color: #ffffff;
       }
     }
@@ -1677,59 +1690,102 @@ margin-left: 0;
       background-color: #fff;
       border: 1px solid #ddd;
       border-radius: 0px;
+      position: relative;
+      height: 306px;
+
+      .upper {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+
+        .caption {
+          background-color: $main-color;
+          padding: 28px 15px;
+          width: 100%;
+          height: 68px;
+
+          a {
+            font-family: $font-main;
+            font-size: 20px;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-decoration: none;
+          }
+        }
+
+        .cost {
+          padding: 70px 15px 0;
+          height: 238px;
 
 
-      .caption {
-        background-color: $main-color;
-        padding: 30px 15px;
+          p {
+            font-size: 20px;
 
-        a {
-          font-family: $font-main;
-          font-size: 20px;
-          color: #ffffff;
-          letter-spacing: 3px;
-          text-decoration: none;
+            &:first-of-type {
+              color: $main-color;
+              font-family: $font-main;
+              font-size: 42px;
+              font-weight: 900;
+              margin-bottom: 10px;
+            }
+          }
         }
       }
 
-      .cost {
-        padding: 70px 15px 0;
-        height: 238px;
 
-        p {
-          font-size: 20px;
+      .overlap {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        visibility: hidden;
 
-          span {
-            color: $main-color;
-            font-family: $font-main;
-            font-size: 42px;
-            font-weight: 900;
+        .cost {
+          padding: 36px 15px;
+          height: 238px;
+
+          p {
+            font-size: 14px;
+            margin-bottom: 0px;
           }
         }
+
+        .caption {
+          background-color: $main-color;
+          padding: 24px 15px 30px;
+          width: 100%;
+          height: 68px;
+
+          a {
+            font-family: $font-main;
+            font-size: 16px;
+            color: #ffffff;
+            letter-spacing: 3px;
+            text-decoration: none;
+
+            &:after {
+              display: inline-block;
+              content: "\f054";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              color: #ffffff;
+              font-size: 14px;
+              margin-left: 8px;
+            }
+          }
+        }
+
       }
     }
-
-    &:nth-of-type(2) {
-      .cost {
-        padding-top: 36px;
-
-        p {
-          font-size: 14px;
-        }
+    &:hover{
+      .upper {
+               visibility: hidden;
       }
-
-      .caption {
-        a {
-          &:after {
-            display: inline-block;
-            content: "\f054";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            color: #ffffff;
-            font-size: 14px;
-            margin-left: 8px;
-          }
-        }
+      .overlap{
+        visibility: visible;
       }
     }
   }
@@ -1772,6 +1828,10 @@ margin-left: 0;
       border: none;
       font-family: $font-main;
       font-size: 14px;
+      &:hover{
+        background-color: #ffffff;
+        color: #000000
+      }
     }
   }
 }
@@ -1902,6 +1962,10 @@ margin-left: 0;
     outline: none;
     display: flex;
     justify-content: center;
+    &:hover{
+      background-color: rgba(22, 22, 22, 0.5);
+
+    }
   }
 }
 

@@ -203,6 +203,9 @@ header {
       .details .col-sm-6 .tab button:hover {
         background-color: #19bd9a;
         border: 1px solid #19bd9a; }
+      .details .col-sm-6 .tab button.active {
+        background-color: #19bd9a;
+        border: 1px solid #19bd9a; }
       .details .col-sm-6 .tab button:nth-of-type(2):before {
         content: "\f8cc";
         font-weight: 900; }
@@ -329,19 +332,22 @@ header {
     .services .col-sm-6 .col-sm-2 .tab button:hover {
       background-color: #19bd9a;
       border: 1px solid #19bd9a; }
+    .services .col-sm-6 .col-sm-2 .tab button:hover.active {
+      background-color: #19bd9a;
+      border: 1px solid #19bd9a; }
   @media screen and (max-width: 365px) {
     .services .col-sm-6 .col-sm-2 .tab button {
       width: 44px;
       height: 44px; } }
-  .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 h4 {
+  .services .col-sm-6 .tabcontent1 .col-sm-9.col-xs-9 h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: #464646;
     margin-bottom: 40px; }
-  .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 p {
+  .services .col-sm-6 .tabcontent1 .col-sm-9.col-xs-9 p {
     text-align: left;
     margin-bottom: 40px; }
-    .services .col-sm-6 .tabcontent .col-sm-9.col-xs-9 p span {
+    .services .col-sm-6 .tabcontent1 .col-sm-9.col-xs-9 p span {
       color: #19bd9a;
       font-weight: 600; }
   .services .col-sm-6 .bg-style {
@@ -1086,38 +1092,73 @@ header {
     margin-bottom: 20px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 0px; }
-    .price .col-sm-4 .thumbnail .caption {
-      background-color: #19bd9a;
-      padding: 30px 15px; }
-      .price .col-sm-4 .thumbnail .caption a {
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
-        color: #ffffff;
-        letter-spacing: 3px;
-        text-decoration: none; }
-    .price .col-sm-4 .thumbnail .cost {
-      padding: 70px 15px 0;
-      height: 238px; }
-      .price .col-sm-4 .thumbnail .cost p {
-        font-size: 20px; }
-        .price .col-sm-4 .thumbnail .cost p span {
-          color: #19bd9a;
+    border-radius: 0px;
+    position: relative;
+    height: 306px; }
+    .price .col-sm-4 .thumbnail .upper {
+      width: 100%;
+      height: 100%;
+      visibility: visible; }
+      .price .col-sm-4 .thumbnail .upper .caption {
+        background-color: #19bd9a;
+        padding: 28px 15px;
+        width: 100%;
+        height: 68px; }
+        .price .col-sm-4 .thumbnail .upper .caption a {
           font-family: "Open Sans", sans-serif;
-          font-size: 42px;
-          font-weight: 900; }
-  .price .col-sm-4:nth-of-type(2) .cost {
-    padding-top: 36px; }
-    .price .col-sm-4:nth-of-type(2) .cost p {
-      font-size: 14px; }
-  .price .col-sm-4:nth-of-type(2) .caption a:after {
-    display: inline-block;
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: #ffffff;
-    font-size: 14px;
-    margin-left: 8px; }
+          font-size: 20px;
+          color: #ffffff;
+          letter-spacing: 3px;
+          text-decoration: none; }
+      .price .col-sm-4 .thumbnail .upper .cost {
+        padding: 70px 15px 0;
+        height: 238px; }
+        .price .col-sm-4 .thumbnail .upper .cost p {
+          font-size: 20px; }
+          .price .col-sm-4 .thumbnail .upper .cost p:first-of-type {
+            color: #19bd9a;
+            font-family: "Open Sans", sans-serif;
+            font-size: 42px;
+            font-weight: 900;
+            margin-bottom: 10px; }
+    .price .col-sm-4 .thumbnail .overlap {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      visibility: hidden; }
+      .price .col-sm-4 .thumbnail .overlap .cost {
+        padding: 36px 15px;
+        height: 238px; }
+        .price .col-sm-4 .thumbnail .overlap .cost p {
+          font-size: 14px;
+          margin-bottom: 0px; }
+      .price .col-sm-4 .thumbnail .overlap .caption {
+        background-color: #19bd9a;
+        padding: 24px 15px 30px;
+        width: 100%;
+        height: 68px; }
+        .price .col-sm-4 .thumbnail .overlap .caption a {
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          color: #ffffff;
+          letter-spacing: 3px;
+          text-decoration: none; }
+          .price .col-sm-4 .thumbnail .overlap .caption a:after {
+            display: inline-block;
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: #ffffff;
+            font-size: 14px;
+            margin-left: 8px; }
+  .price .col-sm-4:hover .upper {
+    visibility: hidden; }
+  .price .col-sm-4:hover .overlap {
+    visibility: visible; }
 
 /*-------------------------------------------------------*/
 .subscribe {
@@ -1146,6 +1187,9 @@ header {
     border: none;
     font-family: "Open Sans", sans-serif;
     font-size: 14px; }
+    .subscribe form button:hover {
+      background-color: #ffffff;
+      color: #000000; }
 
 /*-------------------------------------------------------------*/
 .contact {
@@ -1223,6 +1267,8 @@ header {
     outline: none;
     display: flex;
     justify-content: center; }
+    .forms button:hover {
+      background-color: rgba(22, 22, 22, 0.5); }
 
 /*----MAP-------------------------------*/
 .map .googlemaps {

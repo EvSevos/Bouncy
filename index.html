@@ -72,8 +72,7 @@
     <a href="#"></a>
 </section>
 
-<section class="bouncy">
-    <div id="Hello"></div>
+<section class="bouncy" id="Hello">
     <div class="container ">
         <div class="row ">
 
@@ -97,8 +96,7 @@
     </div>
 </section>
 
-<section class="details">
-    <div id="About"></div>
+<section class="details" id="About">
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
@@ -106,7 +104,7 @@
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
                 <!-- Ссылки вкладки -->
                 <div class="tab">
-                    <button class="tablinks" onclick="openIdea(event, 'creative')" id="defaultOpen"></button>
+                    <button class="tablinks active" onclick="openIdea(event, 'creative')" id="defaultOpen"></button>
                     <button class="tablinks" onclick="openIdea(event, 'available')"></button>
                     <button class="tablinks" onclick="openIdea(event, 'innovative')"></button>
                 </div>
@@ -192,7 +190,6 @@
     </div>
 
 
-
 </section>
 
 
@@ -238,8 +235,7 @@
     </div>
 </section>
 
-<section class="services">
-    <div id="Services"></div>
+<section class="services" id="Services">
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -253,22 +249,22 @@
                     <div class="col-sm-2 col-xs-12">
 
                         <div class="tab">
-                            <button class="tablinks" onclick="openIdea(event, 'graphic')" id="defaultOpen1">
+                            <button class="tablinks1 active" onclick="openDesign(event, 'graphic')" id="defaultOpen1">
                                 <img src="images/serv_eq_03.png" alt="img1">
                             </button>
-                            <button class="tablinks" onclick="openIdea(event, 'illustration')">
+                            <button class="tablinks1" onclick="openDesign(event, 'illustration')">
                                 <img src="images/serv_br_03.png" alt="img2">
                             </button>
-                            <button class="tablinks" onclick="openIdea(event, 'game')">
+                            <button class="tablinks1" onclick="openDesign(event, 'game')">
                                 <img src="images/serv_gp_03.png" alt="img3">
                             </button>
-                            <button class="tablinks" onclick="openIdea(event, 'work')">
+                            <button class="tablinks1" onclick="openDesign(event, 'work')">
                                 <img src="images/serv_vil_03.png" alt="img4">
                             </button>
                         </div>
                     </div>
 
-                    <div id="graphic" class="tabcontent">
+                    <div id="graphic" class="tabcontent1">
                         <div class="col-sm-9 col-xs-9 col-xs-offset-1">
                             <h4>Graphic Design</h4>
                             <p>At vero eos et accusamus et <span>iusto</span> odio dignissimos <b>ducimus</b> qui
@@ -280,7 +276,7 @@
                         </div>
                     </div>
 
-                    <div id="illustration" class="tabcontent">
+                    <div id="illustration" class="tabcontent1">
                         <div class="col-sm-9 col-xs-9 col-xs-offset-1">
                             <h4>Illustration Design</h4>
                             <p>At vero eos et accusamus et <span>iusto</span> odio dignissimos <b>ducimus</b> qui
@@ -292,7 +288,7 @@
                         </div>
                     </div>
 
-                    <div id=game class="tabcontent">
+                    <div id=game class="tabcontent1">
                         <div class="col-sm-9 col-xs-9 col-xs-offset-1">
                             <h4>Game Design</h4>
                             <p>At vero eos et accusamus et <span>iusto</span> odio dignissimos <b>ducimus</b> qui
@@ -304,7 +300,7 @@
                         </div>
                     </div>
 
-                    <div id="work" class="tabcontent">
+                    <div id="work" class="tabcontent1">
                         <div class="col-sm-9 col-xs-9 col-xs-offset-1">
                             <h4>Work Design</h4>
                             <p>At vero eos et accusamus et <span>iusto</span> odio dignissimos <b>ducimus</b> qui
@@ -365,8 +361,7 @@
 </section>
 
 
-<section class="portfolio">
-    <div id="Portfolio"></div>
+<section class="portfolio" id="Portfolio">
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -783,13 +778,12 @@
 <section class="button-contact">
     <div class="text-center">
         <h4>Already Loved Us? Let’s talk!</h4>
-        <a href="#">Contact Us</a>
+        <a href="#Contact">Contact Us</a>
     </div>
 
 </section>
 
-<section class="testimonials">
-    <div id="Blog"></div>
+<section class="testimonials" id="Blog">
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -937,43 +931,87 @@
         <div class="row">
             <div class="col-sm-4 ">
                 <div href="#" class="thumbnail">
-                    <div class="caption text-center">
-                        <a href="#" class=" text-uppercase"> <b>Premium</b></a>
+                    <div class="upper">
+                        <div class="caption text-center">
+                            <a href="#" class=" text-uppercase"> <b>Premium</b></a>
+                        </div>
+                        <div class="cost">
+                            <p class="text-center">$60 </p>
+                            <p class="text-center">Per Month</p>
+                        </div>
                     </div>
-                    <div class="cost">
-                        <p class="text-center"><span>$60</span> <br>
-                            Per Month</p>
+                    <div class="overlap">
+                        <div class="cost">
+                            <p class="text-center">
+                                Full Branding<br>
+                                Project Management<br>
+                                Unlimited Revisions<br>
+                                24/7 h Service<br>
+                                Free Domain<br>
+                                Free Hosting
+                            </p>
+                        </div>
+                        <div class="caption text-center">
+                            <a href="#">Let’s Start</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-4">
                 <div href="#" class="thumbnail">
-                    <div class="cost">
-                        <p class="text-center">
-                            Full Branding<br>
-                            Project Management<br>
-                            Unlimited Revisions<br>
-                            24/7 h Service<br>
-                            Free Domain<br>
-                            Free Hosting <br>
-                            Per Month</p>
+                    <div class="upper">
+                        <div class="caption text-center">
+                            <a href="#" class=" text-uppercase"> <b>VIP</b></a>
+                        </div>
+                        <div class="cost">
+                            <p class="text-center">$70 </p>
+                            <p class="text-center">Per Month</p>
+                        </div>
                     </div>
-                    <div class="caption text-center">
-                        <a href="#">Let’s Start</a>
+                    <div class="overlap">
+                        <div class="cost">
+                            <p class="text-center">
+                                Full Branding<br>
+                                Project Management<br>
+                                Unlimited Revisions<br>
+                                24/7 h Service<br>
+                                Free Domain<br>
+                                Free Hosting
+                            </p>
+                        </div>
+                        <div class="caption text-center">
+                            <a href="#">Let’s Start</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
             <div class="col-sm-4">
                 <div href="#" class="thumbnail">
-                    <div class="caption text-center">
-                        <a href="#" class=" text-uppercase"> <b>EXCLUSIVE</b></a>
+                    <div class="upper">
+                        <div class="caption text-center">
+                            <a href="#" class=" text-uppercase"> <b>Exclusive</b></a>
+                        </div>
+                        <div class="cost">
+                            <p class="text-center">$80 </p>
+                            <p class="text-center">Per Month</p>
+                        </div>
                     </div>
-                    <div class="cost">
-                        <p class="text-center"><span>$80</span> <br>
-                            Per Month</p>
+                    <div class="overlap">
+                        <div class="cost">
+                            <p class="text-center">
+                                Full Branding<br>
+                                Project Management<br>
+                                Unlimited Revisions<br>
+                                24/7 h Service<br>
+                                Free Domain<br>
+                                Free Hosting
+                            </p>
+                        </div>
+                        <div class="caption text-center">
+                            <a href="#">Let’s Start</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -994,7 +1032,7 @@
             <form>
                 <input class="col-sm-5 col-sm-offset-2 col-xs-12" type="email" name="email"
                        placeholder="Email Address"/>
-                <button type="submit" class="col-sm-2 col-sm-offset-1 text-uppercase">SUBMIT</button>
+                <button type="submit" class="col-sm-2 col-sm-offset-1 text-uppercase col-xs-12">SUBMIT</button>
             </form>
 
         </div>
@@ -1003,8 +1041,7 @@
 </section>
 
 <!------------------------------------------------>
-<section class="contact">
-    <div id="Contact"></div>
+<section class="contact" id="Contact">
     <div class="container">
         <div class="row">
             <div class="col-sm-6  col-sm-offset-3">
@@ -1141,7 +1178,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
 <script src="js/owl.carousel.js"></script>
 <script src="js/scripts.js"></script>
 </html>

@@ -210,6 +210,7 @@ $(document).ready(function(){
 });
 
 /*-------------tabs---------------*/
+
 function openIdea(event, ideaName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -226,6 +227,25 @@ function openIdea(event, ideaName) {
 
 // Получите элемент с id="defaultOpen" и нажмите на него
 document.getElementById("defaultOpen").click();
+
+
+
+
+function openDesign(event, DesignName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(DesignName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+
+}
 document.getElementById("defaultOpen1").click();
 
 /*-----scroll--------------------------*/
