@@ -306,6 +306,11 @@ header {
       .projects .brend a:hover {
         background-color: #ffffff;
         color: #19bd9a; }
+    @media screen and (max-width: 992px) {
+      .projects .brend .col-sm-8 {
+        width: 100%; }
+      .projects .brend .col-sm-4 {
+        text-align: center; } }
 
 /*--------------------------------------------------------------*/
 .services {

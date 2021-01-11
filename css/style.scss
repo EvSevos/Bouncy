@@ -478,6 +478,14 @@ header {
       }
 
     }
+    @include max-screen(992px) {
+      .col-sm-8 {
+        width: 100%;
+      }
+      .col-sm-4{
+       text-align: center;
+      }
+    }
   }
 }
 
