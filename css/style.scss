@@ -773,6 +773,13 @@ header {
 
   @media(min-width: 40em) {
     #masonry {
+      column-count: 3;
+      column-gap: 1em;
+    }
+  }
+
+  @media(min-width: 62em) {
+    #masonry {
       column-count: 4;
       column-gap: 1em;
     }

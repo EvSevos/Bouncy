@@ -513,6 +513,10 @@ header {
       column-gap: 1em; } }
   @media (min-width: 40em) {
     .portfolio #masonry {
+      column-count: 3;
+      column-gap: 1em; } }
+  @media (min-width: 62em) {
+    .portfolio #masonry {
       column-count: 4;
       column-gap: 1em; } }
   .portfolio .item {
