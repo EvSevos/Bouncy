@@ -709,7 +709,7 @@ header {
   }
 
   .nav-tabs {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   .nav-tabs.nav-justified > li {
@@ -719,6 +719,7 @@ header {
       color: #464646;
       padding-bottom: 17px;
       font-family: $font-main;
+      white-space: nowrap;
 
       &:after {
         display: block;
@@ -1815,11 +1816,17 @@ header {
       border: 1px solid #81868e;
       padding: 17px 15px 14px;
       background-color: transparent;
+      color:#ffffff;
+
 
       @include max-screen(767px) {
         margin-bottom: 20px;
       }
     }
+    ::-webkit-input-placeholder {color:#cfd3d4;}
+    ::-moz-placeholder          {color:#cfd3d4;}
+    :-moz-placeholder           {color:#cfd3d4;}
+    :-ms-input-placeholder      {color:#cfd3d4;}
 
     button {
       background-color: $main-color;

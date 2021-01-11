@@ -474,13 +474,14 @@ header {
   .portfolio p {
     margin-bottom: 86px; }
   .portfolio .nav-tabs {
-    margin-bottom: 75px; }
+    margin-bottom: 60px; }
   .portfolio .nav-tabs.nav-justified > li a {
     border-bottom: none;
     border-radius: 0;
     color: #464646;
     padding-bottom: 17px;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap; }
     .portfolio .nav-tabs.nav-justified > li a:after {
       display: block;
       content: "";
@@ -1176,10 +1177,19 @@ header {
   .subscribe form input {
     border: 1px solid #81868e;
     padding: 17px 15px 14px;
-    background-color: transparent; }
+    background-color: transparent;
+    color: #ffffff; }
     @media screen and (max-width: 767px) {
       .subscribe form input {
         margin-bottom: 20px; } }
+  .subscribe form ::-webkit-input-placeholder {
+    color: #cfd3d4; }
+  .subscribe form ::-moz-placeholder {
+    color: #cfd3d4; }
+  .subscribe form :-moz-placeholder {
+    color: #cfd3d4; }
+  .subscribe form :-ms-input-placeholder {
+    color: #cfd3d4; }
   .subscribe form button {
     background-color: #19bd9a;
     padding: 16px 15px 14px;
